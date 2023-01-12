@@ -1,0 +1,31 @@
+Oppgave Gjennomsnittsmåling
+
+I denne oppgaven skal du lage programvare for to fotobokser (fotoboks A og fotoboks B) som blant annet kan brukes til å måle gjennomsnittsfart på kjøretøy. Hver fotoboks gjenkjenner registreringsnummer, dato (år, måned, dag) og tidspunkt (timer, minutter, sekund) for alle biler som passerer i en retning (først fotoboks A, deretter fotoboks B) og lagrer dette i to tekstfiler ’box_a.txt’ og ’box_b.txt’ (se figuren under).
+
+Skjermbilde 2022-02-07 kl. 13.32.35.png
+
+ 
+
+Skriv hjelpefunksjonen fileToDictionary som har en parameter filename. Denne funksjonen skal lese inn en tekstfil filename fra en fotoboks, som inneholder bilnummer, dato og tid for hver passering. Funksjonen skal returnere en dictionary med bilnummer som nøkkel og tidspunkt som verdi for nøkkelen.
+Eksempel på kjøring av funksjon på fila box_a.txt som vist i figuren: (viser kun 3 første poster)
+
+'NB72826':' 2022-01-03 07:11:41'
+'ZH85499':' 2022-01-03 07:15:56'
+'FY99401':' 2022-01-03 07:22:33'
+
+Skriv funksjonen listSpeeders som har fire parameterere filename_a, filename_b, speed_limit og distance. De to første parameterne er filnavn på filer fra henholdsvis fotoboks A og B. Parameteren speed_limit angir fartsgrensen for strekningen oppgitt i km/t, mens parameteren distance oppgir avstand mellom fotoboksene angitt i km. Funksjonen skal benytte metoden fileToDictionary(filename) fra pkt. 1 for innlesing av filene. Funksjonen listSpeeeders med hjelpemetoder skal legges i en modul med navn radars.
+Funksjonen skal returnere en dictionary med registreringsnummer som nøkkel for alle biler som har kjørt over fartsgrensa for angitt strekning, dictionary nøkkelverdi skal være en tuple med to elementer: gjennomsnittsfarten brukt på strekningen og datoen med klokkeslett. Det tillates en overskridelse av fartsgrensen på 5%, f.eks. skal det i en sone med 60km/t ikke gis forelegg/bøter for gjennomsnittshastigheter opptil 63 km/t. (Oppdatert 15/2, det stod tiden istedenfor gjennomsnittsfarten, eksempelet nedenfor viser gjennomsnittsfarten)
+
+Eksempel på dictionary returnert fra funksjonen listSpeeders med to filer registrert på en strekning på 5km og fartsgrense 60km/t:
+
+{'FY99401': (72.289, '2022-01-03 07:22:33'), 'DA49644': (68.441, '2022-01-03 07:27:14'), 'SY60306': (78.260, '2022-01-03 08:03:11')}
+
+Det er to vedlagte filer i GitHub startup prosjektet, dette er registreringer foretatt i en 60 km/t sone på 5 km. Benytt disse for å teste ut funksjonaliteten i programmet ditt.
+
+Gjør endringer i Vehicle klassen fra forrige innlevering, legg til et felt for registreringsnummer.
+Definer en ny klasse med navn SpeedTicket som skal kunne ha informasjon om en fartsovertredelse, f.eks. bilnummer, tidspunkt, hastighet og fartsgrense.
+En Vehicle skal kunne ha registrert en eller flere fartsovertredelser, benytt en passende datastruktur for lagring av disse.
+Lag et menyvalg for sjekk av fartsovertredelser. For hvert kjøretøy skal en gå igjennom dictionary fra listSpeeders, dersom bilnummer er registrert skal det opprettes et objekt av typen SpeedTicket og tas vare på for det aktuelle kjøretøy.
+Ved lesing/skriving til fil når programmet starter/avsluttes skal også disse leses/skrives. Tips: Bruk pickle.
+GitHub startup prosjektet inneholder testen radar_test.py, denne skal ikke endres, men benyttes for sjekk av metoden listSpeeders med parametre. Testen kjøres automatisk på GitHub og resultatet av testen vises den den som retter oppgaven. Testen forventer å finne listSpeeders i modulen radars (import radars), så sørg for at funksjonen ligger der.
+NB!  Testen ser etter en metode med navn list_speeders og ikke listSpeeders, korriger dette for at testen skal passere.
