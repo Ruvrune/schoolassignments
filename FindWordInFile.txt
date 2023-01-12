@@ -1,0 +1,20 @@
+Dette er en av oppgavene som kan presenteres. Avtal møte om presentasjon senest to dager etter at frist for innlevering har passert.
+Oppgaven vil ikke bli poengsatt før presentasjonen er utført.
+
+Du skal lage en GUI basert søkemotor som rekursivt går gjennom filer i et mappe og finner alle ganger et bestemt ord opptrer i filene.
+
+Programmet skal:
+
+Få sti til mappe/fil og et ord å søke etter.
+Dersom oppgitt sti peker til en fil eller mappe så skal den fortsette, ellers skal du skrive en feilmelding til TextArea.
+Ved hjelp av rekursjon den skal gå gjennom alle mapper og filer og søke etter et spesifikt ord.
+Dersom du finner et match så skal du skrive ut sti til fil og linje orden befinner seg på.
+Til slutt skal du skrive ut hvor mange mapper og filer du har søkt gjennom samt antall ganger ordet har kommet frem i filene.
+Eksempel på kjøring av program:
+FindWordInFile.png
+
+Tips:
+Lag deg en hjelpemetode som heter for findWord og som brukes for å søke etter ord i et fil.
+Tenk om base case i denne oppgaven, når skal du stoppe å kalle metoden rekursivt? Hva skal du gjøre om File er en mappe og hva skal du gjøre dersom det er et fil?
+
+Du skal levere inn en Python fil: FindWordInFile.py
