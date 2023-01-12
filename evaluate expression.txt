@@ -1,0 +1,14 @@
+Modify Listing 18.13 EvaluateExpression.py to add operators ^ for exponent and % for modulus. For example, 3 ^ 2 is 9 and 3 % 2 is 1. The ^ operator has the highest precedence and the % operator has the same precedence as the * and / operators.
+
+Note: do not care about unary -, that is expressions like 4 + -2. The code in EvaluateExpression will not handle that.
+
+
+Here is a sample run of the program:
+
+<sample run>
+
+Enter an expression: (5 * 2 ^ 3 + 2 * 3 % 2) * 4 <Enter icon>
+
+(5 * 2 ^ 3 + 2 * 3 % 2) * 4 = 160
+
+<end sample run>
