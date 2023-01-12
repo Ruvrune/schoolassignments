@@ -1,0 +1,70 @@
+NB! Du må ha en GitHub konto for å utføre oppgaven.
+
+Gå til oblig1 på GitHub classroom etter at du har registrert egen GitHub konto: https://classroom.github.com/a/JkDof_FvLinks to an external site.
+
+Du vil da se en liste over studenter registrert på faget, velg ditt eget navn i denne listen (gi faglærer beskjed om du ikke finner ditt navn). Det vil automatisk opprettes en repository for deg der du skal levere koden for oblig1.
+
+En beskrivelse for hvordan komme i gang med GIT ligger  her: GIT - hvordan komme i gang
+
+Gjør en clone av dette repository til egen PC og opprett en branch med navn "part1". Løsningen på denne delen av oppgaven skal ligge i denne branchen. Når du er ferdig med denne delen gjør da en merge med master og push part1 til GitHub.
+
+Faglærere og studentassistenter vil ha tilgang til repository for oblig1 på GitHub, lever likevel adressen for din repository som innlevering på Canvas.
+
+Denne oppgaven utgjør første delen av GIT oppgaven.
+
+Du skal utvikle en konsollbasert system som registrerer opplysninger om kjøretøy. De kjøretøy vi skal ta for oss er av typen bil, truck og SUV. Testprogrammet for applikasjonen er delvis skrevet: se car_truck_suv_demo.py i repository for oblig1. 
+
+Programmet skal utvikles stegvis og i den første delen så skal du lage følgende klasser:
+
+Klassen Vehicle med følgende egenskaper:
+merke
+års modell
+kilometerstand
+pris
+En konstruktør som initialiserer alle variabler.
+get og set metoder for alle medlemmer.
+metoden __str__  som skriver ut info om alle medlemmer i klassen.
+Car som arver fra Vehicle har følgende tilleggs data
+antall dører
+En konstruktør som initialiserer alle variabler.
+get og set metoder for alle medlemmer.
+Override __str__ metoden som skriver ut i tillegg data relevant for Car klassen.
+Truck som arver fra Vehicle har følgende tilleggs data
+hjuldrift, 2 eller 4WD
+En konstruktør som initialiserer alle variabler
+get og set metoder for alle medlemmer.
+Override __str__  metoden som skriver ut i tillegg data relevant for Truck klassen.
+ SUV som arver fra Vehicle har følgende tilleggs data
+passasjer kapasitet
+En konstruktør som initialiserer alle variabler
+get og set metoder for alle medlemmer.
+Override __str__  metoden som skriver ut i tillegg data relevant for SUV klassen.
+Ta utgangspunkt i car_truck_suv_demo.py og legg inn kode for menypunktene 1-3, i denne første delen av oppgaven er det ikke krav til kode for menypunkt 4.
+
+Du skal fortsette utviklingen av det konsollbaserte systemet som registrerer opplysninger om kjøretøyer.
+
+Opprett en branch med navn "part2". Løsningen på denne delen av oppgaven skal ligge i denne branchen. Når du er ferdig med denne delen gjør da en merge med master og push part2 til GitHub, samme repository som del 1 av oppgaven.
+
+Faglærere og studentassistenter vil ha tilgang til repository for oblig1 på GitHub, lever likevel adressen for din repository som innlevering på Canvas.
+
+I andre delen av oppgaven skal du legge til følgende:
+
+I car_truck_suv_demo.py
+
+Legg inn kode for menypunkt 4.
+En skal kunne søke i oversikten etter et merke og få skrevet ut alle kjøretøy av dette merket
+Når programmet starter så skal alle kjøretøy leses fra fil, dersom filen ikke eksisterer settes listen over kjøretøy lik en tom liste.
+Når programmet avsluttes så skal alle kjøretøy sorteres og skrives til fil.
+Legg til kode for å fange exceptions som programmet kan kaste, typisk feil i bruker input og feil ved filhåndtering
+Eksempel på programmets utskrift er:
+
+1) New car
+2) New truck
+3) New SUV
+4) Find vehicles by make
+5) Show all vehicles
+6) Quit
+Enter your choice: 4
+
+Name of vehicle: Volvo
+Volvo XC60  Model:  2010  Milage:  30000  Price:  18500.0 Number of passengers: 5
