@@ -1,0 +1,28 @@
+Del 1 av oppgaven
+
+Du skal lage et program som ved hjelp av rekursjon skriver ut et flersifret positivt heltall baklengs.
+
+Programmet skal:
+
+lese inn et heltall fra konsoll og vise reversert tall i konsoll. Den rekursive metoden skal ha følgende signatur:
+
+reverseInteger(value)
+Del 2 av oppgaven
+
+Programmet ditt skal nå ha en GUI som består av en TextField for input av tall og en TextField for fremvisning av tall samt en Button for å reversere tallet.
+
+Programmet skal:
+
+lese inn et flersifret positivt heltall fra brukeren i et GUI vindu.
+ved hjelp av rekursjon skrive ut tallet baklengs til et tekst felt i GUI.
+Den rekursive metoden skal ha følgende signatur:
+
+reverseInteger(value)
+Eksempel av programmets utseende: (Det er bare eksempel på utseende, om du vil kan du endre).
+
+ReverseInt.png
+
+Tips:
+Du må finne ut hva det siste siffer er og hva resten av tallet er. Det enkle tilfellet i rekursjonen er når tallet bare har ett siffer.
+
+Du skal levere: ReverseInt.py
