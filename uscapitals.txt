@@ -1,0 +1,13 @@
+Fila USCapitals.txt Download USCapitals.txtinneholder navn på alle stater i USA og hovedstaden i aktuell stat.
+
+Formatet på fila er :
+
+Stat navn, hovedstad navn
+
+Altså stat og hovedstad navn er skilt med komma. Både stat og hovedstad navn kan være flere ord, eksempelvis New York og Little Rock.
+
+En stat, hovedstad pr linje.
+
+Lag et program som leser fila og oppretter en Dictionary med key og value.
+
+Tilby deretter bruker å oppgi et stat navn, og skriv ut hovedstaden i staten, eller feilmelding dersom staten ikke finnes.
