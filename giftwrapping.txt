@@ -1,0 +1,9 @@
+Exercise 16.13 går ut på å lage en GUI app som viser resultetet av Exercise 16.11: implementere Gift wrapping algoritmen for å finne et Convex hull.
+
+UTGÅR: Les koordinatene fra en tekstfil: ett punkt pr linje, komma mellom x og y koordinater.
+
+Nedenfor er koden til exercise 16.13, den delen som angår GUI. Du skal implementere Gift Wrapping algoritmen, som er oppgave 16.11. Du skal ikke behøve å endre den delen som har med GUI å gjøre. Se kommentarer i startkoden.
+
+Legger også ved løsningsforslag for Exercise 16.12, som implementerer Grahams algoritme for å finne et Convex hull.
+
+Startkode: exercise 16.13: Exercise16_13_start.py
