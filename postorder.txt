@@ -1,0 +1,14 @@
+Implement postorder without recursion. Implement postorder with the help of a stack.
+
+Hint:
+Lag en stack, push rota på stack
+Lag en hjelpeliste visited, opprinnelig tom
+while (stack not empty)
+  se på øverste element (peek)
+  hvis denne noden har et venstre barn og ikke visisted:
+    push denne noden på stack
+  eller denne noden har et høyre barn og ikke visisted:
+    push denne noden på stack
+  ellers:
+    pop stack
+    print(denne noden)
