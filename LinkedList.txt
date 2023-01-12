@@ -1,0 +1,5 @@
+Implementer metodene clear(), contains(e), get(index), lastIndexOf(e), remove(e), indexOf(e) og set(index, e) (set erstatter noden på plass index)
+
+Skriv en main metode som prøver ut koden du har laget, sørg for at alle metoder demonstreres sånn at det vises i utskrift.
+
+Startkode: LinkedList.py
